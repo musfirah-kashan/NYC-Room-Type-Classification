@@ -12,7 +12,7 @@ portfolio site built around it.**
 [![Accuracy](https://img.shields.io/badge/Accuracy-82%25-brightgreen)](#-model)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-[Live Demo](#) · [Report a Bug](../../issues) · [Request a Feature](../../issues)
+[Live Demo](https://nyc-room-type-classification.fastapicloud.dev/) · [Report a Bug](../../issues) · [Request a Feature](../../issues)
 
 </div>
 
