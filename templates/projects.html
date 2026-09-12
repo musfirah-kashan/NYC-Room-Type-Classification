@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+
+{% block title %}Projects · Musfirah Kashan{% endblock %}
+{% block body_class %}page-projects{% endblock %}
+
+{% block content %}
+  <header class="hero hero-projects">
+    <p class="kicker">Projects</p>
+    <h1 class="headline">Six shipped projects,<br>one shared habit: finish and deploy.</h1>
+    <p class="subhead">A mix of full end-to-end ML apps and exploratory data analysis, built with
+      Python, scikit-learn, Pandas, and deployed rather than left in a notebook.</p>
+  </header>
+
+  <section class="project-grid">
+
+    <article class="project-card project-card-featured" id="nyc-airbnb">
+      <div class="project-card-head">
+        <span class="project-tag">Live on this site</span>
+        <h2>NYC Airbnb Room Type Predictor</h2>
+      </div>
+      <p>
+        A classification pipeline trained on ~49,000 NYC Airbnb listings that predicts whether a
+        listing is an entire home, a private room, or a shared room from location, price, and
+        host/review signals. The model is served through this project's own FastAPI backend and
+        powers the <a href="/">predictor on the Home page</a>.
+      </p>
+          <div class="project-graphs project-graphs-full">
+        <figure>
+          <div class="img-frame"><img src="/static/images/correlation_heatmap.png" alt="Correlation heatmap of NYC Airbnb numeric features" loading="lazy"></div>
+          <figcaption>Correlation heatmap of numeric features</figcaption>
+        </figure>
+        <figure>
+          <div class="img-frame"><img src="/static/images/room_type_distribution.png" alt="Distribution of room types across the NYC Airbnb dataset" loading="lazy"></div>
+          <figcaption>Room type distribution</figcaption>
+        </figure>
+        <figure>
+          <div class="img-frame"><img src="/static/images/room_type_plot.png" alt="Room type breakdown plot" loading="lazy"></div>
+          <figcaption>Room type breakdown</figcaption>
+        </figure>
+        <figure>
+          <div class="img-frame"><img src="/static/images/neighbourhood_group_plot.png" alt="Listing counts by NYC borough" loading="lazy"></div>
+          <figcaption>Listings by borough</figcaption>
+        </figure>
+        <figure>
+          <div class="img-frame"><img src="/static/images/neighbourhood_room_distribution.png" alt="Room type distribution across neighbourhoods" loading="lazy"></div>
+          <figcaption>Room type by neighbourhood</figcaption>
+        </figure>
+        <figure>
+          <div class="img-frame"><img src="/static/images/airbnb_numeric_plots.png" alt="Distributions of numeric Airbnb features" loading="lazy"></div>
+          <figcaption>Numeric feature distributions</figcaption>
+        </figure>
+        <figure>
+          <div class="img-frame"><img src="/static/images/nyc_listings_scatterplot.png" alt="Scatterplot of NYC Airbnb listings by location" loading="lazy"></div>
+          <figcaption>Listings mapped by location</figcaption>
+        </figure>
+      </div>
+      <div class="project-meta">
+        <ul class="tag-list tag-list-inline">
+          <li>Python</li><li>scikit-learn</li><li>Pandas</li><li>Numpy</li><li>Matplolib/SeaBorn</li><li>FastAPI</li>
+        </ul>
+        <div class="project-links">
+          <a href="/">Try the predictor</a>
+          <a href="https://github.com/musfirah-kashan/NYC-Room-Type-Classification" target="_blank" rel="noopener">View source</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-head">
+        <span class="project-tag">Deployed · Streamlit</span>
+        <h2>Credit Card Fraud Detection</h2>
+      </div>
+      <p>Compared six classification models on an imbalanced fraud dataset and deployed the
+        best-performing pipeline live on Streamlit for interactive predictions.</p>
+      <ul class="tag-list tag-list-inline">
+        <li>Python</li><li>scikit-learn</li><li>Streamlit</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/musfirah-kashan/Credit-Card-Fraud-Detection" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-head">
+        <span class="project-tag">Regression</span>
+        <h2>Student Exam Score Predictor</h2>
+      </div>
+      <p>A regression model that estimates a student's exam score from study habits and
+        background features, wrapped in a simple prediction interface.</p>
+      <ul class="tag-list tag-list-inline">
+        <li>Python</li><li>scikit-learn</li><li>Pandas</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/musfirah-kashan/Students-Success-Prediction" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-head">
+        <span class="project-tag">Classification</span>
+        <h2>Heart Disease Predictor</h2>
+      </div>
+      <p>Classification models trained on clinical indicators to flag the likelihood of heart
+        disease, with a focus on comparing precision/recall trade-offs across models.</p>
+      <ul class="tag-list tag-list-inline">
+        <li>Python</li><li>scikit-learn</li><li>Pandas</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/musfirah-kashan/Heart-Disease-Predictor" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-head">
+        <span class="project-tag">Unsupervised</span>
+        <h2>Customer Segmentation</h2>
+      </div>
+      <p>K-Means clustering used to group customers into behavioural segments for more targeted
+        marketing decisions, with cluster profiles visualised for interpretation.</p>
+      <ul class="tag-list tag-list-inline">
+        <li>Python</li><li>scikit-learn</li><li>Matplotlib</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/musfirah-kashan/Customer-Segmentation-PCA-KMeans" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-head">
+        <span class="project-tag">EDA</span>
+        <h2>Netflix &amp; Spotify Exploratory Data Analysis (EDA)</h2>
+      </div>
+      <p>Exploratory data analysis on Netflix and Spotify datasets — trends, distributions, and
+        correlations surfaced with Pandas, Matplotlib, and Seaborn.</p>
+      <ul class="tag-list tag-list-inline">
+        <li>Pandas</li><li>Matplotlib</li><li>Seaborn</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/musfirah-kashan/Spotify-Data-Analysis" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </article>
+
+  </section>
+    <div class="graph-lightbox" id="graphLightbox" role="dialog" aria-modal="true" aria-label="Enlarged graph view">
+    <button type="button" class="graph-lightbox-close" id="graphLightboxClose" aria-label="Close">&times;</button>
+    <div class="graph-lightbox-spinner" id="graphLightboxSpinner" aria-hidden="true"></div>
+    <img src="" alt="" id="graphLightboxImg">
+  </div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const lightbox = document.getElementById("graphLightbox");
+    const lightboxImg = document.getElementById("graphLightboxImg");
+    const closeBtn = document.getElementById("graphLightboxClose");
+    const spinner = document.getElementById("graphLightboxSpinner");
+
+    function openLightbox(src, alt) {
+      lightboxImg.classList.remove("is-loaded");
+      spinner.classList.add("is-visible");
+      lightboxImg.src = src;
+      lightboxImg.alt = alt;
+      lightbox.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      document.body.style.overflow = "";
+      setTimeout(() => {
+        if (!lightbox.classList.contains("is-open")) {
+          lightboxImg.src = "";
+        }
+      }, 200);
+    }
+
+    lightboxImg.addEventListener("load", () => {
+      if (lightboxImg.src) {
+        spinner.classList.remove("is-visible");
+        lightboxImg.classList.add("is-loaded");
+      }
+    });
+
+    lightboxImg.addEventListener("error", () => {
+      spinner.classList.remove("is-visible");
+    });
+
+    document.querySelectorAll(".project-graphs-full .img-frame img").forEach((img) => {
+      img.addEventListener("click", () => openLightbox(img.currentSrc || img.src, img.alt));
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    closeBtn.addEventListener("click", closeLightbox);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("is-open")) closeLightbox();
+    });
+  });
+</script>
+{% endblock %}

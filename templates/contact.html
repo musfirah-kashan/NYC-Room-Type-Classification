@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Contact · Musfirah Kashan{% endblock %}
+{% block body_class %}page-contact{% endblock %}
+
+{% block content %}
+  <header class="hero hero-contact">
+    <p class="kicker">Contact</p>
+    <h1 class="headline">Hiring, collaborating,<br>or just want to talk tech?</h1>
+    <p class="subhead">I'm open to internships and full-time roles in Full Stack Development,
+      Data Science, or Machine Learning. The fastest ways to reach me are below.</p>
+  </header>
+
+  <section class="contact-grid">
+    <a class="panel contact-card" href="https://www.linkedin.com/in/musfirah-kashan-487aa626a/" target="_blank" rel="noopener">
+      <span class="contact-card-label">LinkedIn</span>
+      <span class="contact-card-value">musfirah-kashan</span>
+      <span class="contact-card-hint">Connect or message me directly</span>
+    </a>
+
+    <a class="panel contact-card" href="https://github.com/musfirah-kashan" target="_blank" rel="noopener">
+      <span class="contact-card-label">GitHub</span>
+      <span class="contact-card-value">musfirah-kashan</span>
+      <span class="contact-card-hint">Browse my project source code</span>
+    </a>
+
+    <a class="panel contact-card" href="mailto:musfirah22feb@gmail.com">
+      <span class="contact-card-label">Email</span>
+      <span class="contact-card-value">musfirah22feb@gmail.com</span>
+      <span class="contact-card-hint">Email Me Directly</span>
+
+    </a>
+  </section>
+
+  <section class="panel contact-note">
+    <p>
+      Currently a Software Engineering student at NED University (Class of 2029), based in
+      Karachi and building across the full stack — from FastAPI backends and trained models to
+      the interfaces that put them in front of people.
+    </p>
+  </section>
+{% endblock %}

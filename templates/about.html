@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}About · Musfirah Kashan{% endblock %}
+{% block body_class %}page-about{% endblock %}
+
+{% block content %}
+  <header class="hero hero-about">
+    <p class="kicker">About</p>
+    <h1 class="headline">I build things end to end —<br>from raw data to a live product.</h1>
+    <p class="subhead">Full Stack Web Developer, Data Science &amp; AI/ML enthusiast, and Software
+      Engineering student at NED University, Class of 2029.</p>
+  </header>
+
+  <div class="about-grid">
+
+    <section class="panel about-bio">
+      <p>
+        I'm Musfirah Kashan, a Software Engineering student who learns by building rather than
+        just watching tutorials. I enjoy taking a project from raw data — or just an idea — all
+        the way through to a working, deployed product, on both the web development and the
+        data science side of the stack.
+      </p>
+      <p>
+        On the Data Science and ML side, I've trained and deployed several end-to-end machine
+        learning projects: a Credit Card Fraud Detection app comparing six models and deployed
+        live on Streamlit, a Student Exam Score Predictor, a Heart Disease Predictor built on
+        classification models, Customer Segmentation using K-Means clustering, and exploratory
+        data analysis on Netflix and Spotify datasets with Pandas, Matplotlib, and Seaborn. This
+        site's predictor — trained on NYC Airbnb listings and served through this FastAPI
+        backend — is part of that same body of work.
+      </p>
+      <p>On the development side, I've built role-based, production-style applications including
+         MedSync, a healthcare management system with patient/doctor/admin portals,
+          real-time chat, and digital prescriptions built on ASP.NET Core MVC and SQL Server;
+          Business Nexus, a MERN-stack platform connecting entrepreneurs with investors featuring WebRTC video calls and e-signatures; and Impulse Gatherings, an event management platform.
+ </p>
+      <p>
+        I'm currently open to internships and full-time opportunities in Full Stack Development,
+        Data Science, or Machine Learning. If you're hiring, collaborating, or just want to talk
+        tech, I'd love to connect.
+      </p>
+
+      <div class="about-actions">
+        <a class="predict-btn predict-btn-inline" href="/contact">Get in touch</a>
+        <a class="ghost-btn" href="/projects">See my projects</a>
+      </div>
+    </section>
+
+    <aside class="panel about-side">
+      <div class="side-block">
+        <h2>Focus areas</h2>
+        <ul class="tag-list">
+          <li>Full Stack Web Development</li>
+          <li>Data Science</li>
+          <li>Machine Learning / AI</li>
+        </ul>
+      </div>
+
+      <div class="side-block">
+        <h2>Tools &amp; libraries</h2>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>scikit-learn</li>
+          <li>Pandas</li>
+          <li>Matplotlib / Seaborn</li>
+          <li>Streamlit</li>
+          <li>ASP.NET</li>
+          <li>MERN STACK</li>
+        </ul>
+      </div>
+
+      <div class="side-block">
+        <h2>Currently</h2>
+        <p class="side-note">Software Engineering student at NED University, Class of 2029 <span class="dot">·</span> open to internships &amp; full-time roles.</p>
+      </div>
+
+      <div class="side-block">
+        <h2>Elsewhere</h2>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/musfirah-kashan-487aa626a/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/musfirah-kashan" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+{% endblock %}

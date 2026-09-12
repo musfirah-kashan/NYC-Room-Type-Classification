@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Musfirah Kashan{% endblock %}</title>
+<meta name="description" content="{% block description %}Musfirah Kashan — Full Stack Developer &amp; Data Scientist. NYC Airbnb room-type predictor built with FastAPI and scikit-learn.{% endblock %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/site.css?v=3">
+{% block extra_head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+
+<div class="skyline-bg" aria-hidden="true" id="skylineBg"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="site-nav-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark">MK</span>
+      <span class="brand-name">Musfirah&nbsp;Kashan</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      {% for item in nav_items %}
+      <a href="{{ item.path }}" class="{{ 'is-active' if active == item.path else '' }}">{{ item.label }}</a>
+      {% endfor %}
+      <a class="nav-cta" href="https://github.com/musfirah-kashan" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="page">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="page-footer">
+  <div class="footer-inner">
+    <p class="footer-line">Built with FastAPI, scikit-learn &amp; Jinja2 <span class="dot">·</span> designed and developed by Musfirah Kashan</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/musfirah-kashan-487aa626a/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/musfirah-kashan" target="_blank" rel="noopener">GitHub</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/static/js/app.js?v=3"></script>
+{% block extra_scripts %}{% endblock %}
+</body>
+</html>
